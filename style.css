@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  /* Colors */
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+
+  /* Fonts */
+  --font-family: 'Merriweather Sans', sans-serif;
+  --title-font-size: 23px;
+  --subtitle-font-size:20px;
+}
+
+
+body{
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  display: flex;
+  gap: 60px;
+  justify-content:center;
+  margin-top: 40px;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid_2 {
+  display: grid;
+  gap: 20px;
+}
+
+.title {
+  font: 700 var(--title-font-size) var(--font-family);
+}
+
+.subtitle {
+  font: 700 var(--subtitle-font-size) var(--font-family);
+}
+
+.lateral {
+  display: grid;
+  gap: 30px;
+}
+
+section {
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 358px;
+  
+}
+
+.profile img {
+  width: 128px;
+  border-radius: 50%;
+  border: solid 2px #00FF00;
+  margin-bottom: 30px;
+}
+
+.profile p{
+  font: 400 13px var(--font-family);
+  margin-top: 10px;
+}
+
+.links {
+  max-width: 358px;
+}
+
+.links img{
+  width: 24px;
+  margin: 10px;
+  color: var(--text-color) ;
+}
+
+.links ul li {
+  color: var(--text-color);
+  font: 400 12px var(--font-family);
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  color: var(--text-color);
+  font: 400 12px var(--font-family);
+  display: flex;
+  align-items: center;
+}
+
+.tecnologias {
+  max-width: 358px;
+}
+
+.tecnologias ul li{
+  background-color: var(--bg-techs);
+  border-radius: 30px;
+  color: black;
+  font: 700 10px var(--font-family);
+  width: 86px;
+  text-align: center;
+  padding: 6px;
+}
+
+.tecnologias ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.experiencias, .educacao{
+  max-width: 358px;
+  font: 400 12px var(--font-family);
+}
+
+.experiencias ul, .educacao ul{
+  list-style: disc;
+}
+
+.experiencias ul li, .educacao ul li{
+  margin-bottom: 15px;
+}
+
+.project, .post{
+  width: 952px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
